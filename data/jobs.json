@@ -1,6 +1,10 @@
-{"updated":"19 Oct 2026 (starter list; the first run replaces it)","stamp":"2026-10-19T00:00:00+05:30","status":{"seed":"starter data"},"jobs":[
-{"org":"NCRTC","post":"Assistant Manager / Operations – 2 Posts","qual":"B.Tech/B.E","advt":"NCRTC/CO/HR/Rectt./36/2026","posted":"2026-10-01","last":"2026-10-23","url":"https://www.freejobalert.com/articles/ncrtc-assistant-manage-recruitment-2026-apply-online-3069733","tag":"btech","loc":"Delhi","source":"seed","age":"","pay":""},
-{"org":"Indian Army","post":"Technical Graduate Course (TGC-145) Officer – 30 Posts","qual":"B.Tech/B.E","advt":"EN 26/97","posted":"2026-09-30","last":"2026-10-29","url":"https://www.freejobalert.com/articles/indian-army-tgc-145-recruitment-2026-3068772","tag":"btech","loc":"Delhi","source":"seed","age":"","pay":"","ageMax":27,"note":"Officer entry, age 20 to 27"},
-{"org":"DMRC","post":"Supervisor, Engineer and More – 73 Posts","qual":"","advt":"DMRC/PERS/22/HR/2026 (235)","posted":"2026-10-15","last":"2026-11-04","url":"https://www.freejobalert.com/articles/dmrc-executive-and-non-executive-recruitment-2026-3073642","tag":"unknown","loc":"Delhi","source":"seed","age":"","pay":""},
-{"org":"GAIL","post":"Executive Trainee","qual":"B.Tech/B.E","advt":"","posted":"2026-09-11","last":"2027-03-18","url":"https://www.freejobalert.com/articles/gail-executive-trainee-recruitment-2026-apply-online-3065746","tag":"btech","loc":"Delhi","source":"seed","age":"","pay":"","note":"Usually selected through a GATE score"}
-]}
+{
+ "updated": "19 Oct 2026, 10:10 PM IST",
+ "stamp": "2026-10-19T22:10:55.239513+05:30",
+ "status": {
+  "Delhi": "ok (222 listed)",
+  "Haryana": "ok (37 listed)",
+  "Uttar Pradesh": "ok (95 listed)"
+ },
+ "jobs": []
+}
