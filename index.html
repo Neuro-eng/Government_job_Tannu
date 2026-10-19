@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Women B.Tech CSE Job Hub</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#1b1f2a;--muted:#5d6577;--accent:#1f5eff;--line:#e2e5ee;--ok:#15803d;--bad:#b91c1c;--warn:#b45309}
+@media (prefers-color-scheme:dark){:root{--bg:#12141b;--card:#1b1e28;--text:#eceef4;--muted:#9aa1b4;--accent:#6b97ff;--line:#2b3040;--ok:#4ade80;--bad:#f87171;--warn:#fbbf24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+main{max-width:780px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:1.5rem;margin:8px 0 4px}h2{font-size:1.05rem;margin:0 0 8px}
+p{margin:0 0 8px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+label{font-size:.85rem;color:var(--muted);display:block}
+input,select{width:100%;padding:9px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+.job{border-top:1px solid var(--line);padding:10px 0}.job:first-of-type{border-top:0}
+.tag{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:1px 8px;margin-right:4px;color:var(--muted)}
+.s{font-weight:600}.fit{color:var(--ok)}.over{color:var(--bad)}.chk{color:var(--warn)}
+.small{font-size:.86rem}a{color:var(--accent)}
+.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:520px;font-size:.88rem}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+a.btn{display:block;text-align:center;text-decoration:none;background:var(--accent);color:#fff;padding:12px;border-radius:12px;font-weight:600;margin-top:8px}
+a.btn.alt{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+</style></head><body><main>
+<h1>Women B.Tech CSE Job Hub</h1>
+<p>B.Tech Computer Science &amp; Engineering · 70% · no GATE score. Enter your details once; they stay in your browser only.</p>
+
+<div class="card"><h2>Your details</h2>
+<div class="grid">
+<div><label for="dob">Date of birth</label><input type="date" id="dob"></div>
+<div><label for="cat">Category</label><select id="cat"><option>General</option><option>EWS</option><option>OBC</option><option>SC</option><option>ST</option></select></div>
+<div><label for="pct">B.Tech %</label><input type="number" id="pct" value="70" min="0" max="100" step="0.01"></div>
+<div><label for="ex">Extra age years (women/state rule)</label><input type="number" id="ex" value="0" min="0" max="15"></div>
+</div>
+<p class="small" style="margin-top:8px">No date of birth entered? The page assumes age 33. Category relaxation added: OBC +3, SC/ST +5, EWS 0. Use "extra age years" only when the notice allows it for women (for example a state rule, or widowed/divorced women where the notice says so).</p></div>
+
+<div class="card"><h2>Open positions <span id="count" class="small"></span></h2>
+<p class="small" id="meta"></p><div id="jobs">Loading…</div></div>
+
+<div class="card"><h2>Live lists and alerts</h2>
+<a class="btn" href="https://www.freejobalert.com/female-government-jobs/" target="_blank" rel="noopener">Female government jobs</a>
+<a class="btn alt" href="https://www.freejobalert.com/engineering-jobs/" target="_blank" rel="noopener">Engineering jobs (all India)</a>
+<a class="btn alt" href="https://www.freejobalert.com/bank-jobs/" target="_blank" rel="noopener">Bank jobs</a>
+<a class="btn alt" href="https://employmentnews.gov.in/NewEmp/Home.aspx" target="_blank" rel="noopener">Employment News</a>
+<a class="btn alt" href="https://ncs.gov.in/login/jobseeker" target="_blank" rel="noopener">NCS job seeker login</a></div>
+
+<div class="card"><h2>Routes that suit age 33 without GATE</h2>
+<div class="scroll"><table>
+<tr><th>Route</th><th>Why it fits</th><th>Watch for</th></tr>
+<tr><td>Project posts at C-DAC, NIC, IITs, NITs</td><td>CSE skills valued; no GATE needed; higher age limits on senior posts</td><td>Contract terms; experience requirement</td></tr>
+<tr><td>State recruitment (Jharkhand, UP, Haryana and others)</td><td>Many states relax age for women</td><td>Domicile and the exact relaxation in each notice</td></tr>
+<tr><td>PSU engineer and project posts (BEL, BEML, RITES)</td><td>Merit and interview based, no GATE for many posts</td><td>Age cap is often about 30–35 for General</td></tr>
+<tr><td>Bank Specialist Officer (IT), Scale II and above</td><td>Age up to about 35 and above for higher scales</td><td>Needs 3+ years of IT experience</td></tr>
+<tr><td>Teaching posts (KVS/NVS PGT Computer Science, polytechnic)</td><td>Age limits are often 35–40</td><td>B.Ed or M.Tech may be required</td></tr>
+</table></div>
+<p class="small" style="margin-top:8px"><b>Women-specific benefits in central government jobs:</b> 180 days maternity leave, up to 730 days child care leave, and the usual LTC for family travel. Rules vary by employer, so confirm in the offer.</p></div>
+</main>
+<script>
+var $=function(i){return document.getElementById(i)},K="whub",RL={General:0,EWS:0,OBC:3,SC:5,ST:5},data=null;
+function load(){try{var p=JSON.parse(localStorage.getItem(K)||"{}");["dob","cat","pct","ex"].forEach(function(k){if(p[k]!==undefined)$(k).value=p[k]})}catch(e){}}
+function save(){try{var p={};["dob","cat","pct","ex"].forEach(function(k){p[k]=$(k).value});localStorage.setItem(K,JSON.stringify(p))}catch(e){}}
+function age(on){var v=$("dob").value;if(!v)return{y:33,m:0};var q=v.split("-"),y=on.getFullYear()-q[0],m=on.getMonth()-(q[1]-1),d=on.getDate()-q[2];if(d<0)m--;if(m<0){y--;m+=12}return{y:y,m:m}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function render(){
+  if(!data)return;var t=new Date();t.setHours(0,0,0,0);
+  var rel=(RL[$("cat").value]||0)+(+$("ex").value||0),pct=+$("pct").value,h="",n=0;
+  data.jobs.slice().sort(function(a,b){return a.last<b.last?-1:1}).forEach(function(j){
+    var p=j.last.split("-"),dt=new Date(p[0],p[1]-1,p[2]),left=Math.round((dt-t)/864e5);if(left<0)return;n++;
+    var a=age(dt),s,c;
+    if(j.minPercent&&pct<j.minPercent){s="Below the "+j.minPercent+"% requirement";c="over"}
+    else if(j.ageMax==null){s="Age cap not added yet: read the notice (your age on last date: "+a.y+"y "+a.m+"m)";c="chk"}
+    else if(a.y<=j.ageMax+rel){s="Fits: age "+a.y+"y "+a.m+"m, limit "+(j.ageMax+rel);c="fit"}
+    else{s="Over age: "+a.y+"y "+a.m+"m, limit "+(j.ageMax+rel);c="over"}
+    h+='<div class="job"><b>'+esc(j.org)+" — "+esc(j.post)+'</b><span class="tag">Last date '+p[2]+"-"+p[1]+"-"+p[0]+'</span><span class="tag">'+left+' days left</span><span class="tag">'+esc(j.type)+'</span><div class="small">'+esc(j.qual)+(j.note?" · "+esc(j.note):"")+'</div><div class="small s '+c+'">'+esc(s)+'</div><div class="small"><a href="'+esc(j.url)+'" target="_blank" rel="noopener">Open notice and apply link</a></div></div>'});
+  $("jobs").innerHTML=h||"<p>No open positions left. Update data/jobs.json.</p>";$("count").textContent="("+n+")";
+  $("meta").textContent="List updated "+data.updated+". "+data.source}
+["dob","cat","pct","ex"].forEach(function(k){$(k).addEventListener("input",function(){save();render()})});
+load();
+fetch("data/jobs.json").then(function(r){return r.json()}).then(function(d){data=d;render()}).catch(function(){$("jobs").textContent="Could not load data/jobs.json. Open this page through GitHub Pages or a local server."});
+</script></body></html>
